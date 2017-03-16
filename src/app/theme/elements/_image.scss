@@ -64,3 +64,10 @@ $dimensions: 16 24 32 48 64 96 128;
         }
     }
 }
+
+.image-responsive {
+    width: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

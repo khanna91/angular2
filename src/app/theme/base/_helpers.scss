@@ -116,7 +116,7 @@ $displays: 'block' 'flex' 'inline' 'inline-block' 'inline-flex';
     }
 }
 
-is-hidden-widescreen {
+.is-hidden-widescreen {
     @include widescreen() {
         display: none !important;
     }
@@ -126,11 +126,11 @@ is-hidden-widescreen {
     pointer-events: none;
 }
 
-is-marginless {
+.is-margin-less {
     margin: 0 !important;
 }
 
-is-padding-less {
+.is-padding-less {
     padding: 0 !important;
 }
 
