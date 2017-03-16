@@ -11,7 +11,7 @@
     position: relative;
     width: 100%;
 
-    @include tablet() {
+    @include tablet {
         margin: 0 auto;
         max-height: calc(100vh - 40px);
         width: 640px;
@@ -19,7 +19,7 @@
 }
 
 .modal-close {
-    @include delete();
+    @include delete;
     background: none;
     height: 40px;
     position: fixed;
@@ -73,7 +73,7 @@
 }
 
 .modal-card-body {
-    @include overflow-touch();
+    @include overflow-touch;
     background-color: $white;
     flex-grow: 1;
     flex-shrink: 1;

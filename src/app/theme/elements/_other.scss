@@ -1,10 +1,10 @@
 .block {
-    @include block();
+    @include block;
 }
 
 .container {
     position: relative;
-    @include desktop() {
+    @include desktop {
         margin: 0 auto;
         max-width: $desktop - 40px;
 
@@ -14,13 +14,13 @@
         }
     }
 
-    @include widescreen() {
+    @include widescreen {
         max-width: $widescreen - 40px;
     }
 }
 
 .delete {
-    @include delete();
+    @include delete;
 }
 
 .fa {
@@ -38,7 +38,7 @@
 }
 
 .highlight {
-    @include block();
+    @include block;
     font-weight: $weight-normal;
     max-width: 100%;
     overflow: hidden;
@@ -50,7 +50,7 @@
 }
 
 .loader {
-    @include loader();
+    @include loader;
 }
 
 .number {

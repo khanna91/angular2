@@ -5,44 +5,44 @@ $displays: 'block' 'flex' 'inline' 'inline-block' 'inline-flex';
         display: #{$display}
     }
     .is-#{$display}-mobile {
-        @include mobile() {
+        @include mobile {
             display: #{$display} !important;
         }
     }
     .is-#{$display}-tablet {
-        @include tablet() {
+        @include tablet {
             display: #{$display} !important;
         }
     }
     .is-#{$display}-tablet-only {
-        @include tablet-only() {
+        @include tablet-only {
             display: #{$display} !important;
         }
     }
     .is-#{$display}-touch {
-        @include touch() {
+        @include touch {
             display: #{$display} !important;
         }
     }
     .is-#{$display}-desktop {
-        @include desktop() {
+        @include desktop {
             display: #{$display} !important;
         }
     }
     .is-#{$display}-desktop-only {
-        @include desktop-only() {
+        @include desktop-only {
             display: #{$display} !important;
         }
     }
     .is-#{$display}-widescreen {
-        @include widescreen() {
+        @include widescreen {
             display: #{$display} !important;
         }
     }
 }
 
 .is-clearfix {
-    @include clearfix();
+    @include clearfix;
 }
 
 .is-pulled-left {
@@ -81,43 +81,43 @@ $displays: 'block' 'flex' 'inline' 'inline-block' 'inline-flex';
 }
 
 .is-hidden-mobile {
-    @include mobile() {
+    @include mobile {
         display: none;
     }
 }
 
 .is-hidden-tablet {
-    @include tablet() {
+    @include tablet {
         display: none !important;
     }
 }
 
 .is-hidden-tablet-only {
-    @include tablet-only() {
+    @include tablet-only {
         display: none !important;
     }
 }
 
 .is-hidden-touch {
-    @include touch() {
+    @include touch {
         display: none !important;
     }
 }
 
 .is-hidden-desktop {
-    @include desktop() {
+    @include desktop {
         display: none !important;
     }
 }
 
 .is-hidden-desktop-only {
-    @include desktop-only() {
+    @include desktop-only {
         display: none !important;
     }
 }
 
 .is-hidden-widescreen {
-    @include widescreen() {
+    @include widescreen {
         display: none !important;
     }
 }
@@ -135,5 +135,5 @@ $displays: 'block' 'flex' 'inline' 'inline-block' 'inline-flex';
 }
 
 .is-unselectable {
-    @include unselectable();
+    @include unselectable;
 }

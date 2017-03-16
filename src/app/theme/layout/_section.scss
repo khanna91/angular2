@@ -2,7 +2,7 @@
     background-color: $white;
     padding: 3rem 1.5rem;
 
-    @include desktop() {
+    @include desktop {
         &.is-medium {
             padding: 9rem 1.5rem;
         }

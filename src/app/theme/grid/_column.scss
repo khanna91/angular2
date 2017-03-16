@@ -136,7 +136,7 @@
         }
     }
 
-    @include tablet() {
+    @include tablet {
         &.is-narrow,
         &.is-narrow-tablet {
             flex: none;
@@ -216,7 +216,7 @@
         }
     }
 
-    @include desktop() {
+    @include desktop {
         &.is-narrow-desktop {
             flex: none;
         }
@@ -283,7 +283,7 @@
         }
     }
 
-    @include widescreen() {
+    @include widescreen {
         &.is-narrow-widescreen {
             flex: none;
         }
@@ -388,7 +388,7 @@
     }
 
     &.is-grid {
-        @include tablet() {
+        @include tablet {
             flex-wrap: wrap;
             & > .column {
                 max-width: 33.3333%;
@@ -414,13 +414,13 @@
         align-items: center;
     }
 
-    @include tablet() {
+    @include tablet {
         &:not(.is-desktop) {
             display: flex;
         }
     }
 
-    @include desktop() {
+    @include desktop {
         &.is-desktop {
             display: flex;
         }

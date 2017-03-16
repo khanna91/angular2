@@ -3,7 +3,7 @@ $nav-height: 3.5rem !default;
 .nav-toggle {
     @include hamburger($nav-height);
 
-    @include tablet() {
+    @include tablet {
         display: none;
     }
 }
@@ -40,7 +40,7 @@ $nav-height: 3.5rem !default;
         }
     }
 
-    @include mobile() {
+    @include mobile {
         justify-content: flex-start;
     }
 }
@@ -76,7 +76,7 @@ a.nav-item {
         }
     }
 
-    @include desktop() {
+    @include desktop {
         &.is-brand {
             padding-left: 0;
         }
@@ -84,7 +84,7 @@ a.nav-item {
 }
 
 .nav-menu {
-    @include mobile() {
+    @include mobile {
         background-color: $white;
         box-shadow: 0 4px 7px rgba($black, 0.1);
         left: 0;
@@ -103,7 +103,7 @@ a.nav-item {
         }
     }
 
-    @include tablet-only() {
+    @include tablet-only {
         padding-right: 1.5rem;
     }
 }
@@ -136,7 +136,7 @@ a.nav-item {
 
 .nav-right {
     justify-content: flex-end;
-    @include tablet() {
+    @include tablet {
         display: flex;
     }
 }

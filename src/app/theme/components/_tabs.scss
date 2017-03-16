@@ -1,6 +1,6 @@
 .tabs {
-    @include block();
-    @include unselectable();
+    @include block;
+    @include unselectable;
     align-items: stretch;
     display: flex;
     font-size: $size-normal;

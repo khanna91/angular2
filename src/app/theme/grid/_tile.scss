@@ -36,7 +36,7 @@
         }
     }
 
-    @include tablet() {
+    @include tablet {
         &:not(.is-child) {
             display: flex;
         }

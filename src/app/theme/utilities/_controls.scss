@@ -31,15 +31,15 @@ $control-radius-small: $radius-small !default;
     }
 }
 
-@mixin control-small() {
+@mixin control-small {
     border-radius: $control-radius-small;
     font-size: $size-small;
 }
 
-@mixin control-medium() {
+@mixin control-medium {
     font-size: $size-medium;
 }
 
-@mixin control-large() {
+@mixin control-large {
     font-size: $size-large;
 }

@@ -10,7 +10,7 @@ $subtitle-weight: $weight-light !default;
 
 .title,
 .subtitle {
-    @include block();
+    @include block;
     word-break: break-word;
     em,
     span {

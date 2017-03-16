@@ -1,5 +1,5 @@
 .content {
-    @include block();
+    @include block;
     color: $text;
 
     li + li {

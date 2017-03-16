@@ -20,7 +20,7 @@
             }
             .message-body {
                 border-color: $color;
-                color: desaturate(darken($color, $darken-percentage), $desaturate-percentage);
+                //color: desaturate(darken($color, $darken-percentage), $desaturate-percentage);
             }
         }
     }
