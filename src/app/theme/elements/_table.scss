@@ -1,0 +1,157 @@
+$table: $grey-darker !default;
+$table-background: $white !default;
+$table-border: $grey-lighter !default;
+
+$table-head: $grey !default;
+
+$table-row-hover-background: $white-bis !default;
+$table-row-even-background: $white-bis !default;
+$table-row-even-hover-background: $white-ter !default;
+
+.table {
+    background-color: $table-background;
+    color: $table;
+    margin-bottom: 1.5rem;
+    width: 100%;
+
+    td,
+    th {
+        border: 1px solid $table-border;
+        border-width: 0 0 1px;
+        padding: 0.5em 0.75em;
+        vertical-align: top;
+
+        &.is-narrow {
+            white-space: nowrap;
+            width: 1%;
+        }
+    }
+
+    th {
+        color: $text-strong;
+        text-align: left;
+    }
+
+    tr {
+        &:hover {
+            background-color: $table-row-hover-background;
+        }
+    }
+
+    thead {
+        td,
+        th {
+            border-width: 0 0 2px;
+            color: $table-head;
+        }
+    }
+
+    tfoot {
+        td,
+        th {
+            border-width: 2px 0 0;
+            color: $table-head;
+        }
+    }
+
+    tbody {
+        tr {
+            &:last-child {
+                td,
+                th {
+                    border-bottom-width: 0;
+                }
+            }
+        }
+    }
+
+    &.is-bordered {
+        td,
+        th {
+            border-width: 1px;
+        }
+        tr {
+            &:last-child {
+                td,
+                th {
+                    border-bottom-width: 1px;
+                }
+            }
+        }
+    }
+
+    &.is-narrow {
+        td,
+        th {
+            padding: 0.25em 0.5em;
+        }
+    }
+
+    &.is-striped {
+        tbody {
+            tr {
+                &:nth-child(even) {
+                    background-color: $table-row-even-background;
+                    &:hover {
+                        background-color: $table-row-even-hover-background;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.table-responsive {
+    overflow-x: auto;
+    min-height: 0.01%; // Workaround for IE9 bug (see https://github.com/twbs/bootstrap/issues/14837)
+
+    @include mobile() {
+        width: 100%;
+        margin-bottom: 1rem;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid $table-background;
+
+        > .table {
+            margin-bottom: 0;
+            > thead,
+            > tbody,
+            > tfoot {
+                > tr {
+                    > th,
+                    > td {
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+
+        > .is-bordered {
+            border: 0;
+            > thead,
+            > tbody,
+            > tfoot {
+                > tr {
+                    > th:first-child,
+                    > td:first-child {
+                        border-left: 0;
+                    }
+                    > th:last-child,
+                    > td:last-child {
+                        border-right: 0;
+                    }
+                }
+            }
+
+            > tbody,
+            > tfoot {
+                > tr:last-child {
+                    > th,
+                    > td {
+                        border-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
