@@ -15,6 +15,7 @@
     }
 
     @include widescreen {
+        margin: 0 auto;
         max-width: $widescreen - 40px;
     }
 }
