@@ -67,3 +67,31 @@
     text-align: center;
     vertical-align: top;
 }
+
+.blockquote {
+    padding: .5rem 1rem;
+    font-size: 1.308rem;
+    border-left: .25rem solid #eceeef;
+
+    @each $name, $pair in $colors {
+        $color: nth($pair, 1);
+        &.is-#{$name} {
+            border-color : $color;
+        }
+    }
+}
+
+.blockquote-reverse {
+    padding-right: 1rem;
+    padding-left: 0;
+    text-align: right;
+    border-right: .25rem solid #eceeef;
+    border-left: 0;
+
+    @each $name, $pair in $colors {
+        $color: nth($pair, 1);
+        &.is-#{$name} {
+            border-color : $color;
+        }
+    }
+}
