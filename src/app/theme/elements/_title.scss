@@ -40,8 +40,8 @@ $subtitle-weight: $weight-light !default;
         margin-top: -0.75rem;
     }
 
-    & + .subtitle {
-        margin-top: -1.25rem;
+    &:not(.is-spaced) + .subtitle {
+        margin-top: -1.5rem;
     }
 
     @each $size in $sizes {
@@ -62,7 +62,7 @@ $subtitle-weight: $weight-light !default;
         color: $subtitle-strong;
     }
 
-    & + .title {
+    &:not(.is-spaced) + .title {
         margin-top: -1.5rem;
     }
 
