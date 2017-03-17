@@ -192,20 +192,20 @@ $button-shadow-inset: inset 0 1px 2px rgba($black, 0.2) !default;
         &.is-#{$name} {
             background-color: $color;
             border-color: transparent;
-            color: $color-invert;
+            color: $white;
 
             &:hover,
             &.is-hovered {
                 background-color: darken($color, 2.5%);
                 border-color: transparent;
-                color: $color-invert;
+                color: $white;
             }
 
             &:focus,
             &.is-focused {
                 border-color: transparent;
                 box-shadow: 0 0 0.5em rgba($color, 0.25);
-                color: $color-invert;
+                color: $white;
             }
 
             &:active,
@@ -213,7 +213,7 @@ $button-shadow-inset: inset 0 1px 2px rgba($black, 0.2) !default;
                 background-color: darken($color, 5%);
                 border-color: transparent;
                 box-shadow: $button-shadow-inset;
-                color: $color-invert;
+                color: $white;
             }
 
             &.is-inverted {
@@ -240,7 +240,7 @@ $button-shadow-inset: inset 0 1px 2px rgba($black, 0.2) !default;
                 &:focus {
                     background-color: $color;
                     border-color: $color;
-                    color: $color-invert;
+                    color: $white;
                 }
 
                 &.is-loading {
@@ -253,7 +253,7 @@ $button-shadow-inset: inset 0 1px 2px rgba($black, 0.2) !default;
             &.is-inverted.is-outlined {
                 background-color: transparent;
                 border-color: $color-invert;
-                color: $color-invert;
+                color: $white;
 
                 &:hover,
                 &:focus {

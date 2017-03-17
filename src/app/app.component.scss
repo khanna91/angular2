@@ -1,1 +1,9 @@
 @import "theme/style";
+
+.nav-item {
+    &.is-brand {
+        img {
+            max-height: 3.75rem;
+        }
+    }
+}

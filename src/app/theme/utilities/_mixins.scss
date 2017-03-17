@@ -253,7 +253,7 @@ $widescreen: 1192px !default;
 }
 
 @mixin desktop {
-    @media screen and (max-width: $desktop) {
+    @media screen and (min-width: $desktop) {
         @content
     }
 }
