@@ -1,0 +1,30 @@
+.title {
+    &.is-2 {
+        position: relative;
+
+        a {
+            color: #242424;
+            padding-left: 48px;
+            position: relative;
+
+            &:hover {
+                color: hsl(206, 82%, 63%);
+            }
+        }
+
+        .icon {
+            &.is-medium {
+                left: 8px;
+                position: absolute;
+                top: 10px;
+            }
+        }
+    }
+}
+
+#grid {
+    .notification {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

@@ -7,3 +7,21 @@
         }
     }
 }
+
+.highlight {
+    position: relative;
+    .copy,
+    .expand {
+        -webkit-touch-callout: none;
+        user-select: none;
+        background: white;
+        border: solid #dbdbdb;
+        border-width: 0 0 1px 1px;
+        color: #7a7a7a;
+        cursor: pointer;
+        outline: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
