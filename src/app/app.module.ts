@@ -9,13 +9,15 @@ import { FooterComponent } from './common/footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutes } from './app.route';
 import {DocsModule} from "./docs/docs.module";
+import { PageNotFoundComponent } from './common/page-not-found/page-not-found.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         HeaderComponent,
         FooterComponent,
-        HomeComponent
+        HomeComponent,
+        PageNotFoundComponent
     ],
     imports: [
         BrowserModule,
