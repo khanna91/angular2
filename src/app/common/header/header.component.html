@@ -25,10 +25,10 @@
         <!-- This "nav-menu" is hidden on mobile -->
         <!-- Add the modifier "is-active" to display it on mobile -->
         <div class="nav-right nav-menu">
-            <a [routerLink]="['/']" class="nav-item">
+            <a [routerLink]="['/']" class="nav-item" [routerLinkActive]="['is-active']">
                 Home
             </a>
-            <a [routerLink]="['/docs', 'element']" class="nav-item">
+            <a [routerLink]="['/docs', 'overview']" class="nav-item" [routerLinkActive]="['is-active']">
                 Documentation
             </a>
 
