@@ -25,10 +25,10 @@
         <!-- This "nav-menu" is hidden on mobile -->
         <!-- Add the modifier "is-active" to display it on mobile -->
         <div class="nav-right nav-menu">
-            <a [routerLink]="['/']" class="nav-item" [routerLinkActive]="['is-active']">
+            <a [routerLink]="['/']" class="nav-item" [ngClass]="{'is-active': pathMatch('/')}">
                 Home
             </a>
-            <a [routerLink]="['/docs', 'overview']" class="nav-item" [routerLinkActive]="['is-active']">
+            <a [routerLink]="['/docs', 'overview']" class="nav-item" [ngClass]="{'is-active': pathExist('overview')}">
                 Documentation
             </a>
 
